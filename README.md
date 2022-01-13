@@ -10,7 +10,7 @@ a **12 column grid** css framework using grid layout and contains classes for sp
 
 ### spacing
 
- - **margin**
+- **margin**
 
   - **m-[1 | 2 | 3 | 4 | 5]**: setting margins to 1rem, 1.5rem, 2rem, 2.5rem, and 3rem respectfully
     
