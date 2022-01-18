@@ -6,3 +6,30 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+@each $base, $type in $spacing-types {
+    @for $i from 0 to 6 {
+        .#{$base}-#{$i} {
+            #{$type}: nth($spacing-sizes, ($i + 1))
+        }
+    }
+}
+
+@each $base, $type in $spacing-types {
+    @each $direction, $value in $directions {
+        @for $i from 0 to 6 {
+            .#{$base}#{$direction}-#{$i} {
+                #{$type}-#{$value}: nth($spacing-sizes, ($i + 1));
+            }
+        }
+    }
+}

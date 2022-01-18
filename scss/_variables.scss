@@ -1,0 +1,15 @@
+// Text align values
+$text-align-values: center, left, right, justify;
+
+//margin and padding spacings
+$spacing-sizes: 0rem, .25rem, .5rem, 1rem, 1.5rem, 3rem;
+$spacing-types: (
+    p: padding,
+    m: margin
+);
+$directions: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left
+);
